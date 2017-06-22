@@ -1,17 +1,16 @@
 ﻿using System;
+using System.Linq;
 
 namespace ClassLibrary1
 {
     public class Class1
     {
-        public void Foo()
+        void Test1()
         {
-            int x = 0;
-            float y = 1.0f;
-
+            int x = 0, y = 1;
             var t = (x, y);
 
-            (int foo, float bar) = t;
+            var (foo, bar) = t;
         }
     }
 }
